@@ -1,0 +1,9 @@
+# Binary
+ticket-booking
+*.exe
+
+# Env files (kalau nanti ada API key/db credentials)
+.env
+
+# OS files
+.DS_Store
