@@ -4,6 +4,7 @@ import "time"
 
 type Flight struct {
 	ID            string
+	Airline       string
 	Origin        string
 	Destination   string
 	DepartureTime time.Time
