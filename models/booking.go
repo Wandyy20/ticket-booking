@@ -10,10 +10,8 @@ const (
 )
 
 type Booking struct {
-	ID         string
-	FlightID   string
-	SeatNumber string
-	Name       string
-	Status     BookingStatus
-	CreatedAt  time.Time
+	ID        string
+	FlightID  string
+	Status    BookingStatus
+	CreatedAt time.Time
 }
