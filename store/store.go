@@ -4,7 +4,7 @@ import "ticket-booking/models"
 
 type FlightStore interface {
 	GetAllFlights() ([]models.Flight, error)
-	GetAllFlightByID(id string) (models.Flight, error)
+	GetFlightByID(id string) (models.Flight, error)
 }
 
 type SeatStore interface {
