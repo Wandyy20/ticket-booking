@@ -57,7 +57,7 @@ func (s *InMemoryStore) GetFlightByID(id string) (models.Flight, error){
 	return f, nil
 }
 
-func (s *InMemoryStore) GetSeatsByFlightID(flightID string) ([]models.Seat, error){
+func (s *InMemoryStore) GetSeatByFlightID(flightID string) ([]models.Seat, error){
 	s.mu.Lock()
 	defer s.mu.Unlock()
 
