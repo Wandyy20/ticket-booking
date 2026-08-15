@@ -21,6 +21,7 @@ func main(){
 	r.Get("/flights/{id}", handlers.GetFlightByIDHandler(appStore))
 	r.Get("/flights/{id}/seats", handlers.GetFlightSeatsHandler(appStore))
 
+	
 	r.Post("/bookings", handlers.CreateBookingHandler(appStore))
 	r.Get("/bookings/{id}", handlers.GetBookingHandler(appStore))
 	r.Delete("/bookings/{id}", handlers.DeleteBookingHandler(appStore))
